@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أصل القطن | فخامة القطن المصري</title>
+    <meta name="description" content="أصل القطن - أجود منتجات القطن المصري بأفضل الأسعار. فروعنا في قصر النيل، مدينة نصر، الدقي، وشارع شريف.">
+    
+    <!-- استدعاء خط Cairo من Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- إعدادات التخصيص لـ Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                    },
+                    colors: {
+                        royal: {
+                            800: '#1e3a8a',
+                            900: '#172554',
+                            950: '#0a1024',
+                        },
+                        gold: {
+                            100: '#fdf6e3',
+                            400: '#e5c05b',
+                            500: '#d4af37',
+                            600: '#bfa15f',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f8fafc;
+            overflow-x: hidden;
+        }
+        
+        /* Glassmorphism Effect */
+        .hero-glass {
+            background: rgba(10, 16, 36, 0.4); /* تعميق لون الزجاج لتباين أفضل */
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Logo Blending */
+        .logo-blend {
+            mix-blend-mode: multiply;
+            filter: contrast(1.1);
+        }
+
+        .branch-card {
+            background: white;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .branch-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+        .animate-float {
+            animation: float 5s ease-in-out infinite;
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% { opacity: 0.2; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.3); }
+        }
+        .glow-effect {
+            animation: pulse-glow 4s ease-in-out infinite;
+        }
+
+        .social-btn {
+            transition: all 0.3s ease;
+        }
+        .social-btn:hover {
+            transform: scale(1.1) translateY(-5px);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* تحسين قراءة الخطوط */
+        .text-shadow-strong {
+            text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="antialiased text-slate-800">
+
+    <!-- Hero Section / قسم الواجهة -->
+    <header class="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-royal-950">
+        <!-- Background Image with Deeper Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?q=80&w=2024&auto=format&fit=crop" 
+                 alt="Cotton Texture" 
+                 class="w-full h-full object-cover opacity-30">
+            <!-- تدرج لوني أغمق لزيادة التباين مع الخطوط الفاتحة -->
+            <div class="absolute inset-0 bg-gradient-to-t from-royal-950 via-royal-900/80 to-royal-950/90"></div>
+        </div>
+
+        <!-- Main Content Container -->
+        <div class="relative z-10 container mx-auto px-4">
+            <div class="hero-glass max-w-4xl mx-auto rounded-[3.5rem] p-8 md:p-16 text-center border-t border-white/20">
+                
+                <!-- Logo Area -->
+                <div class="relative mb-8 flex justify-center">
+                    <div class="absolute inset-0 bg-gold-500/30 blur-[80px] rounded-full glow-effect"></div>
+                    <div class="relative animate-float bg-white/95 rounded-[2rem] p-5 shadow-[0_20px_50px_rgba(0,0,0,0.3)] border border-white/20">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhIWFw0lFfeIw-PRAR6mNk77i0RqVwtdaM7zTM8KcqV_qErVNiuun7wAT4bGGyEZwSKK_zuJahNZyb8U7KPMWe7FsAYFAHDusFdv_I0aN5sI3hoDqlJmwjMPARo-yi9pVAQePP4_OYLRvOOU1RPiL1dRh4CHMxLt0KndVxdwiRxZi-v0Dm7qsCw1UwaWm8/s300/New%20Project.webp" 
+                             alt="أصل القطن" 
+                             class="w-44 md:w-60 h-auto logo-blend">
+                    </div>
+                </div>
+
+                <!-- Titles -->
+                <h1 class="text-6xl md:text-8xl font-black text-white mb-6 text-shadow-strong leading-tight">
+                    أصل <span class="text-gold-400">القُطن</span>
+                </h1>
+                
+                <p class="text-xl md:text-2xl text-white font-medium mb-12 max-w-2xl mx-auto leading-relaxed drop-shadow-lg opacity-95">
+                    فخامة الملمس المصري الأصيل بتصاميم عصرية تناسب ذوقك الرفيع. 
+                    <span class="block mt-3 font-bold text-gold-400 italic">الجودة التي تستحقها.. دائماً.</span>
+                </p>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                    <a href="#branches" class="group relative px-12 py-5 bg-gold-500 hover:bg-gold-400 text-royal-950 rounded-2xl font-black text-xl transition-all duration-300 shadow-[0_15px_35px_rgba(212,175,55,0.4)] hover:-translate-y-1">
+                        تصفح الفروع
+                    </a>
+                    
+                    <a href="https://rb.gy/c0y1f5" target="_blank" class="flex items-center gap-3 px-10 py-5 border-2 border-white/30 text-white rounded-2xl font-bold text-xl hover:bg-white/20 transition-all backdrop-blur-xl">
+                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                        تواصل واتساب
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce">
+            <span class="text-white/60 text-xs font-bold tracking-widest uppercase">اكتشف فروعنا</span>
+            <div class="w-1 h-12 bg-gradient-to-b from-gold-500 to-transparent rounded-full"></div>
+        </div>
+    </header>
+
+    <!-- Branches Section / قسم الفروع -->
+    <section id="branches" class="py-24 bg-white">
+        <div class="container mx-auto px-4 max-w-7xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-black text-royal-950 mb-4">فروعنا المعتمدة</h2>
+                <p class="text-lg text-slate-500">نسعد بزيارتكم في أي من فروعنا لخدمتكم بأفضل شكل</p>
+                <div class="w-20 h-1.5 bg-gold-500 mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- فرع قصر النيل -->
+                <div class="branch-card rounded-[2.5rem] p-8 border border-slate-100 shadow-sm relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-2 h-full bg-gold-500 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-top"></div>
+                    <div class="mb-6 text-royal-800">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-royal-900 mb-4">قصر النيل</h3>
+                    <p class="text-slate-600 mb-6 min-h-[60px]">38 شارع قصر النيل – وسط البلد.</p>
+                    <div class="space-y-4">
+                        <a href="tel:01553850760" class="flex items-center text-royal-900 font-bold hover:text-gold-600 transition">
+                            <span class="ml-2 bg-royal-100 p-2 rounded-lg">📞</span> 01553850760
+                        </a>
+                        <a href="https://goo.gl/maps/81wVY7M1mQFLRQM8A" target="_blank" class="block w-full text-center py-3 bg-royal-900 text-white rounded-xl hover:bg-gold-500 transition-colors font-bold">
+                            الخريطة 📍
+                        </a>
+                    </div>
+                </div>
+
+                <!-- فرع مدينة نصر -->
+                <div class="branch-card rounded-[2.5rem] p-8 border border-slate-100 shadow-sm relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-2 h-full bg-gold-500 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-top"></div>
+                    <div class="mb-6 text-royal-800">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-royal-900 mb-4">مدينة نصر</h3>
+                    <p class="text-slate-600 mb-6 min-h-[60px]">تقاطع عباس العقاد مع مصطفى النحاس.</p>
+                    <div class="space-y-4">
+                        <a href="tel:01559077550" class="flex items-center text-royal-900 font-bold hover:text-gold-600 transition">
+                            <span class="ml-2 bg-royal-100 p-2 rounded-lg">📞</span> 01559077550
+                        </a>
+                        <a href="https://goo.gl/maps/fzconmMWhvgtouXk8" target="_blank" class="block w-full text-center py-3 bg-royal-900 text-white rounded-xl hover:bg-gold-500 transition-colors font-bold">
+                            الخريطة 📍
+                        </a>
+                    </div>
+                </div>
+
+                <!-- فرع الدقي -->
+                <div class="branch-card rounded-[2.5rem] p-8 border border-slate-100 shadow-sm relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-2 h-full bg-gold-500 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-top"></div>
+                    <div class="mb-6 text-royal-800">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-royal-900 mb-4">الدقي</h3>
+                    <p class="text-slate-600 mb-6 min-h-[60px]">85 شارع السودان - أمام مرور العجوزة.</p>
+                    <div class="space-y-4">
+                        <a href="tel:01554042786" class="flex items-center text-royal-900 font-bold hover:text-gold-600 transition">
+                            <span class="ml-2 bg-royal-100 p-2 rounded-lg">📞</span> 01554042786
+                        </a>
+                        <a href="https://goo.gl/maps/W9C6iP3HjRwjKeTT6" target="_blank" class="block w-full text-center py-3 bg-royal-900 text-white rounded-xl hover:bg-gold-500 transition-colors font-bold">
+                            الخريطة 📍
+                        </a>
+                    </div>
+                </div>
+
+                <!-- فرع شارع شريف -->
+                <div class="branch-card rounded-[2.5rem] p-8 border border-slate-100 shadow-sm relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-2 h-full bg-gold-500 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-500 origin-top"></div>
+                    <div class="mb-6 text-royal-800">
+                        <svg class="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-royal-900 mb-4">شارع شريف</h3>
+                    <p class="text-slate-600 mb-6 min-h-[60px]">21 شارع شريف - وسط البلد.</p>
+                    <div class="space-y-4">
+                        <a href="tel:01553850760" class="flex items-center text-royal-900 font-bold hover:text-gold-600 transition">
+                            <span class="ml-2 bg-royal-100 p-2 rounded-lg">📞</span> 01553850760
+                        </a>
+                        <a href="https://goo.gl/maps/DETx3QJedXxqJpxV8" target="_blank" class="block w-full text-center py-3 bg-royal-900 text-white rounded-xl hover:bg-gold-500 transition-colors font-bold">
+                            الخريطة 📍
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Section / قسم التواصل -->
+    <footer class="py-20 bg-royal-950 text-white border-t border-white/5">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-black mb-12">تواصل معنا عبر منصاتنا</h2>
+            
+            <div class="flex flex-wrap justify-center gap-8 md:gap-12">
+                <!-- FB -->
+                <a href="https://rb.gy/xn2go4" class="social-btn group">
+                    <div class="w-20 h-20 bg-white/5 rounded-[2rem] flex items-center justify-center backdrop-blur-md group-hover:bg-[#1877F2] shadow-xl border border-white/10 transition-all duration-500">
+                        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </div>
+                    <span class="block mt-3 text-xs opacity-50 font-bold tracking-widest uppercase">Facebook</span>
+                </a>
+                <!-- Insta -->
+                <a href="https://rb.gy/sx4t1j" class="social-btn group">
+                    <div class="w-20 h-20 bg-white/5 rounded-[2rem] flex items-center justify-center backdrop-blur-md group-hover:bg-[#E4405F] shadow-xl border border-white/10 transition-all duration-500">
+                        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </div>
+                    <span class="block mt-3 text-xs opacity-50 font-bold tracking-widest uppercase">Instagram</span>
+                </a>
+                <!-- Telegram -->
+                <a href="https://rb.gy/7prq4z" class="social-btn group">
+                    <div class="w-20 h-20 bg-white/5 rounded-[2rem] flex items-center justify-center backdrop-blur-md group-hover:bg-[#0088cc] shadow-xl border border-white/10 transition-all duration-500">
+                        <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 11.944 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+                    </div>
+                    <span class="block mt-3 text-xs opacity-50 font-bold tracking-widest uppercase">Telegram</span>
+                </a>
+            </div>
+
+            <div class="mt-20 pt-8 border-t border-white/5 text-center opacity-40 text-sm">
+                <p>#جديد_جديد | #أصل_القطن | #القطن_المصري</p>
+                <p class="mt-2 text-xs">&copy; 2024 أصل القطن - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
